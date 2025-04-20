@@ -155,7 +155,7 @@
 
     let answers = {};  // { subject: [ {question, answer}, … ] }
 
-    fetch('assets/answers.txt')
+    fetch('answers.txt')   // вместо assets/answers.txt
       .then(r => r.text())
       .then(parseAnswers)
       .catch(err => console.error('Ошибка загрузки answers.txt', err));
